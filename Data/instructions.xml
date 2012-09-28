@@ -1,0 +1,194 @@
+<instructions>
+	<ins>
+		<name>addi</name>
+		<class>	<name>IAddi</name> <type>I</type> </class>
+	</ins>
+	<ins>
+		<name>addiu</name>
+		<class>	<name>IAddiu</name> <type>I</type> </class>
+	</ins>
+	<ins>
+		<name>andi</name>
+		<class>	<name>IAndi</name> <type>I</type> </class>
+	</ins>
+	<ins>
+		<name>li</name>
+		<class>	<name>PLi</name> <type>P</type> </class>
+	</ins>
+	<ins>
+		<name>la</name>
+		<class>	<name>PLa</name> <type>P</type> </class>
+	</ins>
+	<ins>
+		<name>lb</name>
+		<class>	<name>ILb</name> <type>I</type> </class>
+	</ins>
+	<ins>
+		<name>lbu</name>
+		<class>	<name>ILbu</name> <type>I</type> </class>
+	</ins>
+	<ins>
+		<name>lui</name>
+		<class>	<name>ILui</name> <type>I</type> </class>
+	</ins>
+	<ins>
+		<name>lw</name>
+		<class>	<name>ILw</name> <type>I</type> </class>
+	</ins>
+	<ins>
+		<name>ori</name>
+		<class>	<name>IOri</name> <type>I</type> </class>
+	</ins>
+	<ins>
+		<name>sb</name>
+		<class>	<name>ISb</name> <type>I</type> </class>
+	</ins>
+	<ins>
+		<name>slt</name>
+		<class>	<name>RSlt</name> <type>R</type> </class>
+	</ins>
+	<ins>
+		<name>slti</name>
+		<class>	<name>ISlti</name> <type>I</type> </class>
+	</ins>
+	<ins>
+		<name>sgt</name>
+		<maker>PSgtA</maker>
+		<class>	<name>PSgtA</name> <type>P</type> </class>
+	</ins>
+	<ins>
+		<name>sw</name>
+		<class>	<name>ISw</name> <type>I</type> </class>
+	</ins>
+	<ins>
+		<name>xori</name>
+		<class>	<name>IXori</name> <type>I</type> </class>
+	</ins>
+	<ins>
+		<name>add</name>
+		<class>	<name>RAdd</name> <type>R</type> </class>
+	</ins>
+	<ins>
+		<name>addu</name>
+		<class>	<name>RAddu</name> <type>R</type> </class>
+	</ins>
+	<ins>
+		<name>and</name>
+		<class>	<name>RAnd</name> <type>R</type> </class>
+	</ins>
+	<ins>
+		<name>jr</name>
+		<class>	<name>RJr</name> <type>R</type> </class>
+	</ins>
+	<ins>
+		<name>nor</name>
+		<class>	<name>RNor</name> <type>R</type> </class>
+	</ins>
+	<ins>
+		<name>or</name>
+		<class>	<name>ROr</name> <type>R</type> </class>
+	</ins>
+	<ins>
+		<name>sll</name>
+		<class>	<name>RSll</name> <type>R</type> </class>
+	</ins>
+	<ins>
+		<name>sllv</name>
+		<class>	<name>RSllv</name> <type>R</type> </class>
+	</ins>	
+	<ins>
+		<name>slt</name>
+		<class>	<name>RSlt</name> <type>R</type> </class>
+	</ins>
+	<ins>
+		<name>sltu</name>
+		<class>	<name>RSltu</name> <type>R</type> </class>
+	</ins>
+	<ins>
+		<name>sra</name>
+		<class>	<name>RSra</name> <type>R</type> </class>
+	</ins>
+	<ins>
+		<name>srav</name>
+		<class>	<name>RSrav</name> <type>R</type> </class>
+	</ins>
+	<ins>
+		<name>srl</name>
+		<class>	<name>RSrl</name> <type>R</type> </class>
+	</ins>
+	<ins>
+		<name>srlv</name>
+		<class>	<name>RSrlv</name> <type>R</type> </class>
+	</ins>
+	<ins>
+		<name>sub</name>
+		<class>	<name>RSub</name> <type>R</type> </class>
+	</ins>
+	<ins>
+		<name>subu</name>
+		<class>	<name>RSubu</name> <type>R</type> </class>
+	</ins>
+	<ins>
+		<name>subi</name>
+		<maker>IFormatInstruction</maker>
+		<class>	<name>PSubi</name> <type>P</type> </class>
+	</ins>
+	<ins>
+		<name>xor</name>
+		<class>	<name>RXor</name> <type>R</type> </class>
+	</ins>
+	
+	<ins>
+		<name>beq</name>
+		<maker>MBranch</maker>
+		<class>	<name>IBeq</name> <type>I</type> </class>
+		<class>	<name>PBeqB</name> <type>P</type> </class>
+	</ins>
+	<ins>
+		<name>bne</name>
+		<maker>MBranch</maker>
+		<class>	<name>IBne</name> <type>I</type> </class>
+		<class>	<name>PBneB</name> <type>P</type> </class>
+	</ins>
+	<ins>
+		<name>bgt</name>
+		<maker>MBranch</maker>
+	</ins>
+	<ins>
+		<name>bgt-a</name>
+		<maker>null</maker>
+		<class>	<name>PBgtA</name> <type>P</type> </class>
+	</ins>
+	<ins>
+		<name>bgt-b</name>
+		<maker>null</maker>
+		<class>	<name>PBgtB</name> <type>P</type> </class>
+	</ins>
+	<ins>
+		<name>blt</name>
+		<maker>MBranch</maker>
+	</ins>
+	<ins>
+		<name>blt-a</name>
+		<maker>null</maker>
+		<class>	<name>PBltA</name> <type>P</type> </class>
+	</ins>
+	<ins>
+		<name>blt-b</name>
+		<maker>null</maker>
+		<class>	<name>PBltB</name> <type>P</type> </class>
+	</ins>
+	<ins>
+		<name>j</name>
+		<class>	<name>JJ</name>	<type>J</type> </class>
+	</ins>
+	<ins>
+		<name>jal</name>
+		<class>	<name>JJal</name>	<type>J</type> </class>
+	</ins>
+	<ins>
+		<name>move</name>
+		<class>	<name>PMove</name>	<type>P</type> </class>
+	</ins>
+
+</instructions>
